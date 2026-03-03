@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#ff8000" />
+  <title>DJM Project Pros — Preview</title>
+  <meta name="description" content="Preview: DJM Project Pros site with orange theme and favicon" />
+
+  <!-- Embedded SVG favicon (small orange DJM badge) -->
+  <link rel="icon" href="data:image/svg+xml;utf8,
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'>
+    <rect width='64' height='64' fill='%23000000'/>
+    <circle cx='32' cy='32' r='28' fill='none' stroke='%23ff8000' stroke-width='4'/>
+    <text x='32' y='38' font-family='Segoe UI, Roboto, Arial' font-weight='700' font-size='14' fill='%23ffbb66' text-anchor='middle'>DJM</text>
+  </svg>">
+
+  <style>
+    :root{
+      --bg: #1b0b00;
+      --text: #fff2e1;
+      --muted: #ffa75b;
+      --line: rgba(255,140,0,.15);
+      --brand: #ff8000;
+      --brand2: #FFAA33;
+      --radius: 18px;
+      --max: 1120px;
+      --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--font);
+      background:
+        radial-gradient(800px 400px at 10% 10%, rgba(255,140,0,.14), transparent 40%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.5;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+    header{padding:18px 0; border-bottom:1px solid var(--line); background: rgba(27,11,0,.55)}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{
+      width:44px;height:44px;border-radius:10px;
+      background:linear-gradient(135deg,var(--brand),var(--brand2));
+      box-shadow:0 10px 28px rgba(255,140,0,.18);
+      display:flex;align-items:center;justify-content:center;color:#3b2008;font-weight:800;
+      font-size:18px;
+    }
+    h1{margin:12px 0 6px;color:var(--brand);font-size:clamp(26px,4vw,40px)}
+    p.lead{color:var(--muted);max-width:60ch}
+
+    /* Buttons */
+    .btn{padding:8px 12px;border-radius:12px;border:1px solid var(--line);background:rgba(255,140,0,.05);color:var(--text);text-decoration:none;font-weight:700}
+    .btnPrimary{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#4b2d0a;border:0}
+
+    /* Gallery */
+    .galleryReal{display:grid;gap:20px}
+    .projectCard{
+      border-radius:18px;overflow:hidden;background:linear-gradient(180deg, rgba(51,22,0,.45), rgba(0,0,0,.25));border:1px solid rgba(255,140,0,.10);
+      box-shadow:0 12px 30px rgba(0,0,0,.45);
+    }
+    .projectCard img{display:block;width:100%;height:auto}
+    .projectCard img:first-child{border-bottom:3px solid rgba(255,140,0,.10)}
+    .projectInfo{padding:14px}
+    .projectInfo h3{margin:0 0 6px;color:var(--brand)}
+    .projectInfo p{margin:0;color:var(--muted)}
+
+    /* Layout helpers */
+    main{padding:28px 0 80px}
+    section{padding:24px 0}
+    footer{padding:28px 0;text-align:center;color:var(--muted);border-top:1px solid var(--line)}
+    @media (min-width:760px){
+      .galleryReal{grid-template-columns:repeat(2,1fr)}
+      .heroRow{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap" style="display:flex;align-items:center;justify-content:space-between">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">DJM</div>
+        <div>
+          <div style="font-weight:800">DJM Project Pros</div>
+          <div style="font-size:12px;color:var(--muted)">Home Improvement • Repairs • Remodel</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:10px;align-items:center">
+        <a class="btn" href="#contact">Call</a>
+        <a class="btn btnPrimary" href="#contact">Get a Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="heroRow" style="margin-bottom:18px">
+        <div>
+          <h1>Quality work. Clear pricing. No headaches.</h1>
+          <p class="lead">This preview shows your orange-themed site with the DJM badge as the favicon and an embedded gallery. Replace the placeholder images with your real photos for the final result.</p>
+        </div>
+        <aside style="background:linear-gradient(180deg,rgba(255,140,0,.06),transparent);padding:14px;border-radius:12px;border:1px solid var(--line)">
+          <strong style="color:var(--brand)">Quick Details</strong>
+          <div style="margin-top:8px;color:var(--muted)">Free quotes · Transparent pricing · Reliable crew</div>
+        </aside>
+      </div>
+
+      <!-- RECENT PROJECTS GALLERY (uses embedded SVG placeholders so this single file works immediately) -->
+      <section id="work">
+        <h2>Recent Projects</h2>
+        <p class="lead">Real work from Carbon, Lehigh & Monroe Counties — placeholder images shown in this preview.</p>
+
+        <div class="galleryReal">
+          <!-- Project 1 - Front Porch Refresh (embedded SVG placeholders) -->
+          <div class="projectCard">
+            <img src="data:image/svg+xml;utf8,
+            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 700'>
+              <rect width='1200' height='700' fill='%23210c00'/>
+              <text x='50%' y='50%' font-size='48' fill='%23ffbb66' font-family='Segoe UI, Roboto, Arial' text-anchor='middle'>Before: Porch</text>
+            </svg>" alt="Front porch before renovation">
+            <img src="data:image/svg+xml;utf8,
+            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 700'>
+              <rect width='1200' height='700' fill='%23140a00'/>
+              <text x='50%' y='50%' font-size='48' fill='%23ffd097' font-family='Segoe UI, Roboto, Arial' text-anchor='middle'>After: Porch</text>
+            </svg>" alt="Front porch after renovation">
+            <div class="projectInfo">
+              <h3>Front Porch Refresh</h3>
+              <p>Replaced railing, refreshed porch area, cleaned and upgraded overall appearance.</p>
+            </div>
+          </div>
+
+          <!-- Project 2 - Custom Entry Steps (embedded SVG placeholders) -->
+          <div class="projectCard">
+            <img src="data:image/svg+xml;utf8,
+            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 700'>
+              <rect width='1200' height='700' fill='%23210c00'/>
+              <text x='50%' y='50%' font-size='48' fill='%23ffbb66' font-family='Segoe UI, Roboto, Arial' text-anchor='middle'>Before: Steps</text>
+            </svg>" alt="Old damaged front steps">
+            <img src="data:image/svg+xml;utf8,
+            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 700'>
+              <rect width='1200' height='700' fill='%23140a00'/>
+              <text x='50%' y='50%' font-size='48' fill='%23ffd097' font-family='Segoe UI, Roboto, Arial' text-anchor='middle'>After: Steps</text>
+            </svg>" alt="New custom built wood steps">
+            <div class="projectInfo">
+              <h3>Custom Entry Steps</h3>
+              <p>Removed damaged structure and installed solid framed steps with clean finish.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT PREVIEW -->
+      <section id="contact" style="margin-top:22px">
+        <h2>Request a quote</h2>
+        <p class="lead">Fill out the form on the real site or call/text to send photos and details.</p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap">
+          <div style="flex:1;min-width:260px;background:rgba(0,0,0,.25);padding:14px;border-radius:12px;border:1px solid var(--line)">
+            <div style="font-weight:800;color:var(--brand)">Phone:</div>
+            <a href="tel:+10000000000" class="btn" style="display:inline-block;margin-top:8px">Call Now</a>
+          </div>
+          <div style="flex:1;min-width:260px;background:rgba(0,0,0,.25);padding:14px;border-radius:12px;border:1px solid var(--line)">
+            <div style="font-weight:800;color:var(--brand)">Email:</div>
+            <div style="color:var(--muted);margin-top:8px">quotes@djmprojectpros.com</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © <span id="year"></span> DJM Project Pros — Preview. Replace placeholders with your real logo & photos.
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
